@@ -8,6 +8,95 @@
 </head>
 <body>
     <h1>Hello world!</h1>
-    <script src="main.js/script_1.js"></script>
+    
+    <script>
+    
+
+    // const arr = [3, 5, 8, 16, 20, 23, 50];
+    // const result = [];
+
+    // for (let i = 0; i < arr.length; i++) {
+    //     result[i] = arr[i];
+    // }
+
+    // console.log(result);
+     
+// for (let i = 2; i <= 16; i++) {
+//     if (i % 2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
+// }
+// const length = 5;
+// let result = '';
+
+// for (let i = 0; i <= length; i++) {
+//     for (let j = 0; j < length - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result)
+
+// const lines = 5;
+// let result = '';
+
+// for (let i = 0; i <= lines; i++) {
+    
+//     for (let j = 0; j < lines - i; j++) {
+//         result += " ";
+//     }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//         result += "*";
+//     }
+//     result += "\n";
+// }
+
+// console.log(result);
+
+// function sayHello(name) {
+//    return `Привет,${name}`;
+// }
+// sayHello('Антон');
+
+// function returnNeighboringNumbers(arr) {
+//     return [arr - 1, arr, arr + 1]
+// }
+// returnNeighboringNumbers(5);
+
+function getMathResult(num, rep) {
+
+    if (typeof(rep) !== 'number' || rep <= 0 ) {
+        return num;
+    }
+
+    let str = "";
+
+    for (i = 1; i <= rep; i++) {
+        if (i === rep) {
+            str += `${num * i}`;
+        } else {
+            str += `${num * i}---`;
+        }
+        
+    }
+    console.log(str);
+    return str;
+
+}
+getMathResult(5,10);
+getMathResult(5,0);
+getMathResult(6,4);
+getMathResult(3,10);
+getMathResult(3,'10');
+
+    </script>
+
+    <script src=""></script>
 </body>
 </html>
